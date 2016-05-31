@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(myAdapter);
 
         startActivity(new Intent(this,Iona.class));
-        //这里多了一行注释
+        //这里多了一行注释sdfdsfdsf
 
     }
 
