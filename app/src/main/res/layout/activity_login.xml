@@ -7,51 +7,35 @@
               android:animateLayoutChanges="true"
               android:padding="10dp">
 
-    <EditText
-            android:layout_width="wrap_content"
+  <EditText android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="邮箱地址"
+            android:hint="@string/email"
             android:imeOptions="actionNext"
             android:imeActionId="112"
             android:id="@+id/email"
             android:inputType="textEmailAddress"
             android:minWidth="10000dp"/>
 
-    <EditText
-            android:id="@+id/password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="输入密码"
-            android:minWidth="10000dp"
-            android:password="true"
-            android:singleLine="true"
-            android:visibility="gone"/>
+  <EditText android:layout_width="match_parent"
+            android:hint="@string/enter_nickname"
+            android:visibility="gone"
+            android:id="@+id/nickname"
+            android:layout_height="match_parent"/>
 
-    <EditText
-            android:id="@+id/password_confirm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="确认密码"
-            android:imeOptions="actionDone"
-            android:minWidth="10000dp"
-            android:password="true"
-            android:singleLine="true"
-            android:visibility="gone"/>
+  <EditText android:layout_width="match_parent"
+            android:id="@+id/self_intro"
+            android:visibility="gone"
+            android:hint="@string/enter_self_intro"
+            android:layout_height="match_parent"/>
 
-    <LinearLayout
+  <EditText android:id="@+id/password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <TextView
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"/>
-        <TextView
-                android:id="@+id/next_step"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="nextMove"
-                android:text="@string/next_move"/>
-    </LinearLayout>
+            android:layout_height="match_parent"
+            android:hint="@string/enter_password"
+            android:imeActionId="113"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:visibility="gone"/>
 
 </LinearLayout>
 
